@@ -7,6 +7,25 @@ public class Author {
     @Id
     private int id;
     private String First_Name;
+    private String Last_Name;
+    private String Year_of_Birth;
+
+    public void setLast_Name(String last_Name) {
+        Last_Name = last_Name;
+    }
+
+    public void setYear_of_Birth(String year_of_Birth) {
+        Year_of_Birth = year_of_Birth;
+    }
+
+    public String getLast_Name() {
+
+        return Last_Name;
+    }
+
+    public String getYear_of_Birth() {
+        return Year_of_Birth;
+    }
 
     public int getId() {
         return id;
