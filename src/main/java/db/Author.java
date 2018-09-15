@@ -1,13 +1,18 @@
 package db;
 import javax.persistence.*;
 
-@Entity
 
+@Entity
+@Table(name="Author")
 public class Author {
     @Id
+    @Column(name="id")
     private int id;
+    @Column(name="First_Name")
     private String First_Name;
+    @Column(name="Last_Name")
     private String Last_Name;
+    @Column(name="Year_of_Birth")
     private String Year_of_Birth;
 
     public Author(int id, String First_Name,String Last_Name,String Year_of_Birth){
@@ -47,3 +52,5 @@ public class Author {
         First_Name = first_Name;
     }
 }
+// <property name="hibernate.hbm2ddl.auto">update</property>
+// <mapping class="myDB3.Author"/>
